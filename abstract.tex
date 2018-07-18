@@ -1,11 +1,18 @@
 \documentclass[11pt]{article}
 \usepackage{graphicx}
+\usepackage{authblk}
 \usepackage[utf8]{inputenc}
-\graphicspath{/Users/georgeadams/Dropbox/005_ITP_projects/003 TPO/R commands for TPO/}
+\graphicspath{/Users/georgeadams/Dropbox/005_ITP_projects/003 TPO/GIT_repo_TPOPROJECT/}
 
 
 \title{Bayesian Analysis of TPO levels in Immune Thrombocytopenia}
-\author{George Adams .... Nichola Cooper}
+\author[1,2]{\small George Adams}
+\author[1,2]{\small Nichola Cooper}
+\affil[1]{\footnotesize Imperial College London}
+\affil[2]{\footnotesize Imperial College NHS Trust}
+
+
+
 \date{July 2018}
 
 \begin{document}
@@ -19,7 +26,7 @@
 
 \paragraph{Results:} Of the 121 samples collected, we excluded 30 which failed to show any TPO result, leaving 91 samples. We had positive repeat samples on many of these patients which indicated these zero values where due to laboratory assay failures rather than true absence of TPO. The TPO range was between 14-829.3pg/ml (normal range for health individual ~ 80pg/ml) and platelet counts ranged from 4 to 452 x$10^9/L$.  We predicted TPO distributions for platelet counts; 1 to 200. Figure 1A showes the infered distributions of TPO for platelet counts 10, 20, 30, 40, 50, 60, 70, 80, 90 and 100. The maximium a posteriori (MAP) estimates, which reflect the maximium point within the distribution were calculated for the different platelets counts (1 to 200). For platelet count of 1 the MAP was calculated at 410pg/ml (bayesian confidence interval, BCI; 200-804pg/ml). This declined sharply to 100pg/ml as the platelet count increased from 1 to 10x10$^9/L$. As the platelet count further increased up to 50$x10^9/L$ the TPO level stabilised to a MAP estimate of  As platelet counts increased the TPO level then declines in a non-linear manner (Figure 1B.) with the MAP estimate falling from 407pg/ml to approximately 100pg/ml (BCI 164 to 281 pg/ml) as platelet counts increased from 1 to 10$x10^9/L$. TPO levels continued to fall as with platelet counts rising from 10 to 50$x10^9/L$ at which point TPO levels were 37.5pg.ml (BCI 31 to 46pg/ml) and then declined much more slowly do approximately 16 pg/ml (BCI 11-21 pg/ml).
 
-\paragraph{Conclusions:} Our study identified that in patients with ITP there is a clear non-linear correlation between platelet count and TPO level, with a flattening off of TPO levels at platelet counts between 50-100x10$^9/L$. Consistent with previous studies, TPO levels in ITP patients approached levels found in healthy individuals at much lower platelet counts. ITP patients with a platelet count 10$x10^9/L$ had TPO levels of approximately 100pg/ml which is similar to the expect levels seen in healthy individuals (approximately 120pg/ml, range 80 - 230pg/ml) \cite{SinghCirculatingthrombopoietinlevels2015}. However, this ITP patients as the platelet count increased to normal ranges, as patients went into remission, TPO levels also fell. As such, in patients in remission with platelet counts \geqlant150$x10^9/L$ TPO levels were only approximately 16pg/ml (range 11-21pg/ml), four-fold lower than healthy levels. Furthermore the fact that TPO levels changed only very slightly in our patients with platelet counts \geqslant50 is in opposition to the `sponge theory' of TPO regulation. These findings would be more consistent with failure in TPO production as opposed to excessive removal. This would also support the rationale for supplementation of TPO with TPO agonists in ITP, which clinically have been demonstrated to be highly effective.  \cite{WangEfficacysafetythrombopoietin2016}.
+\paragraph{Conclusions:} Our study identified that in patients with ITP there is a clear non-linear correlation between platelet count and TPO level, with a flattening off of TPO levels at platelet counts between 50-100$x10^9/L$. Consistent with previous studies, TPO levels in ITP patients approached levels found in healthy individuals at much lower platelet counts. ITP patients with a platelet count 10$x10^9/L$ had TPO levels of approximately 100pg/ml which is similar to the expect levels seen in healthy individuals (approximately 120pg/ml, range 80 - 230pg/ml) \cite{SinghCirculatingthrombopoietinlevels2015}. However, this ITP patients as the platelet count increased to normal ranges, as patients went into remission, TPO levels also fell. As such, in patients in remission with platelet counts \geqlant150$x10^9/L$ TPO levels were only approximately 16pg/ml (range 11-21pg/ml), four-fold lower than healthy levels. Furthermore the fact that TPO levels changed only very slightly in our patients with platelet counts \geqslant50 is in opposition to the `sponge theory' of TPO regulation. These findings would be more consistent with failure in TPO production as opposed to excessive removal. This would also support the rationale for supplementation of TPO with TPO agonists in ITP, which clinically have been demonstrated to be highly effective.  \cite{WangEfficacysafetythrombopoietin2016}.
 
 
 \begin{center}
