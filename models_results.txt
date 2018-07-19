@@ -1,0 +1,49 @@
+> precis(m2, corr = T)  ITP
+       Mean StdDev  5.5% 94.5%     a     b sigma
+a      5.50   0.30  5.02  5.98  1.00 -0.94 -0.07
+b     -0.44   0.08 -0.56 -0.31 -0.94  1.00  0.07
+sigma  0.95   0.07  0.83  1.07 -0.07  0.07  1.00
+
+> m2
+
+Maximum a posteriori (MAP) model fit
+
+Formula:
+plt.log ~ dnorm(mu, sigma)
+mu <- a + b * tpo.log
+a ~ dnorm(4, 1)
+b ~ dnorm(0, 1)
+sigma ~ dunif(0, 2)
+
+MAP values:
+         a          b      sigma
+ 5.5001798 -0.4391733  0.9517432
+
+Log-likelihood: -113.67
+
+######
+
+
+NON-ITP
+> precis(m3, corr = T)
+       Mean StdDev  5.5% 94.5%     a     b sigma
+a      3.45   0.48  2.68  4.22  1.00 -0.83 -0.33
+b     -0.07   0.08 -0.20  0.05 -0.83  1.00  0.28
+sigma  1.07   0.23  0.70  1.44 -0.33  0.28  1.00
+
+> m3
+
+Maximum a posteriori (MAP) model fit
+
+Formula:
+plt.log ~ dnorm(mu, sigma)
+mu <- a + b * tpo.log
+a ~ dnorm(3, 0.5)
+b ~ dnorm(0, 10)
+sigma ~ dunif(1, 10)
+
+MAP values:
+        a         b     sigma
+ 3.450768 -0.071453  1.069011
+
+Log-likelihood: -17.83 
