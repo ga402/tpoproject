@@ -8,6 +8,7 @@ nitp <- tpo[!tpo$diag == "itp",]  # those non-itp patients
 itp <- tpo[tpo$diag == "itp",]    # itp patients
 itp <- itp[itp$tpo >0,]           # TPO levels > 0 in ITP patients
 
+
 ## cleaningn data - removing the values that equal zero -> replacing with 1 (only 1 samples)
 ## (zero's not managed by model)
 

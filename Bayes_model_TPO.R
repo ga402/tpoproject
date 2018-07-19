@@ -27,6 +27,7 @@ plt <- seq(from=1,to=200,length.out=200) ## plt counts you want to predict
 new_data <- data.frame(plt_log=log(plt))  ## new dataset of plt counts
 lambda <- link(m2,data=new_data,n=9000)   ## project model parameters - project 9000
 
+
 lambda.mu.mean <- apply(lambda$mu,2,mean)  # take average of each column to get mean
 lambda.mu.HPDI <- apply(lambda$mu,2,HPDI)  # highest posterior density (HPDI) and percentile (PI)
 head(lambda.mu.mean)
