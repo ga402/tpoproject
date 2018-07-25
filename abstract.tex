@@ -8,6 +8,10 @@
 
 \title{Bayesian Analysis of TPO levels in Immune Thrombocytopenia}
 \author[1,2]{\small George Adams}
+\author[1]{\small Adam Gosztolai}
+\author[1]{\small Anwar Sayed}
+\author[1]{\small Amna Malik}
+\author[1]{\small Elisa Lucchini}
 \author[1,2]{\small Nichola Cooper}
 \affil[1]{\footnotesize Imperial College London, Kensington, London SW7 2AZ}
 \affil[2]{\footnotesize Hammersmith Hospital, Imperial College NHS Trust, London W12 0HS}
@@ -20,7 +24,7 @@
 
 \maketitle
 
-\paragraph{Introduction:} Thrombopoietin (TPO) is a haematopoietic growth factor, prodominately produced by the liver and kidneys, whose major function is in the regulation of platelet production. The exact mechanisms that regulate TPO levels are highly debated. The preeminent hypothesis is that TPO is synthesised in a constitutive manner and its concentration in the blood is determined by the total volume of platelets. The theory is that platelets bind TPO via high-affinity receptors and remove it from the circulation (the `sponge theory'). As platelet counts fall TPO levels rise, and vice-versa \cite{EtoLinkagemechanismsthrombocytopenia2016}. %% could try and compress this a bit  % 
+\paragraph{Introduction:} Thrombopoietin (TPO) is a haematopoietic growth factor, prodominately produced by the liver and kidneys, whose major function is in the regulation of platelet production. The exact mechanisms that regulate TPO levels are highly debated. The preeminent hypothesis is that TPO is synthesised in a constitutive manner and its concentration in the blood is determined by the total volume of platelets. The theory is that platelets bind TPO via high-affinity receptors and remove it from the circulation (the `sponge theory'). As platelet counts fall TPO levels rise, and vice-versa \cite{EtoLinkagemechanismsthrombocytopenia2016}. %% could try and compress this a bit  %
 In patients with active ITP, however, TPO levels have been shown to have inappropriately low. This has been thought to be because the higher rate of platelet turnover in active ITP causes additional amounts of TPO to be consumed. To better understand the relationship between TPO and platelets in ITP we measured TPO levels in a 67 patients with ITP and 5 patients with aplastic anaemia, which acted as non-immune thrombocytopenic controls. We used a bayesian regresssion approach to analyse the association between TPO and platelet counts. This approach allows us to infer TPO concentration over a range of different platelet counts and has been shown to be more accurate with smaller sample sizes than classical gaussian regression models \cite{GoldsteinBayesiananalysisregression1976}.
 
 
@@ -53,8 +57,8 @@ In patients with active ITP, however, TPO levels have been shown to have inappro
 %\end{center}
 
 \begin{sidewaysfigure}
-\includegraphics[width=0.8\textwidth]{ABSTRACT_v3_graph1.png}
-\caption {FIGURE 1: A.) Shows posterior probabiltiy distributions for different platelet counts ranging from 1 to 90 in our ITP patient group. Dashed vertical lines represent \textit{maximium a posteriori} (MAP) estimates for each distribution, moving from right to left as platelet counts increase and TPO levels falls. B.) Curved lines with shading shows model predictions for logTPO levels versus platelet counts in both ITP patients (lower line) and Aplastic controls (upper line). Points represent the individual results for the ITP group. Darker shaded area represent the 90\% bayesian credible interval and the lighter shading represents the simulated observational interval. Points are the results our ITP patients only.}
+\includegraphics[width=0.8\textwidth]{ABS_v4_g1.pdf}
+\caption {FIGURE 1: A.) Shows posterior probabiltiy distributions for _log_TPO according to different platelet counts ranging from 1 to 90 in our ITP patient group. Dashed vertical lines represent \textit{maximium a posteriori} (MAP) estimates for each distribution, moving from right to left as platelet counts increase and TPO levels falls. B.) Curved lines with shading shows model predictions for logTPO levels versus platelet counts in both ITP patients (lower line) and Aplastic controls (upper dashed line). Points represent the individual results for the ITP group. Triangles represent Aplastic patients. Darker shaded area represent the 90\% bayesian credible interval and the lighter shading represents the simulated observational interval}
 \end{sidewaysfigure}
 
 \bibliographystyle{plain}
